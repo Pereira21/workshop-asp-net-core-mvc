@@ -8,7 +8,7 @@ namespace SalesWebMvc.Models
     {
         public Seller()
         {
-
+            
         }
 
         public Seller(string name, string email, DateTime birthDate, double baseSalary, Departamento departamento)
@@ -41,6 +41,7 @@ namespace SalesWebMvc.Models
         public DateTime BirthDate { get; set; }
         public double BaseSalary { get; set; }
         public Departamento Departamento { get; set; }
+        public int DepartamentoId { get; set; }
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();
     }
 }
